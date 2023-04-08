@@ -1,20 +1,11 @@
-let greet: Function;
+const character = "mario";
 
-greet = () => {
-  console.log("hello");
-};
+console.log(character);
 
-greet();
+const inputs = document.querySelectorAll("input");
 
-const add = (a: number, b: number, c: number | string = 10) => {
-  console.log(a + b);
-  console.log(c);
-};
+console.log(inputs);
 
-add(5, 10, 20);
-
-const minus = (a: number, b: number) => {
-  return a + b;
-};
-
-let result = minus(10, 7);
+inputs.forEach((input) => {
+  console.log(input);
+});
