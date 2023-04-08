@@ -1,11 +1,43 @@
-const character = "mario";
+// explicit types
+let character: string;
 
-console.log(character);
+let age: number;
+let isLoggedIn: boolean;
 
-const inputs = document.querySelectorAll("input");
+age = 30;
 
-console.log(inputs);
+isLoggedIn = true;
 
-inputs.forEach((input) => {
-  console.log(input);
-});
+//arrays
+let ninjas: string[] = [];
+
+ninjas = ["yoshi", "mario"];
+
+// union types
+let mixed: (string | number | boolean)[] = [];
+mixed.push("hello");
+mixed.push(20);
+mixed.push(false);
+
+console.log(mixed);
+
+let uid: string | number;
+uid = "123";
+uid = 123;
+
+// objects
+let ninjaOne: object;
+ninjaOne = { name: "yoshi", age: 30 };
+ninjaOne = [];
+
+let ninjaTwo: {
+  name: string;
+  age: number;
+  beltColor: string;
+};
+
+ninjaTwo = {
+  name: "mario",
+  age: 20,
+  beltColor: "black",
+};
